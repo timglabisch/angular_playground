@@ -1,0 +1,43 @@
+<div ng-app="main">
+    <div ng-controller="hello">
+        <span ng-click="onClick()">{{ text }}</span> {{ clicks }}
+    </div>
+
+
+    <div id="productlist">
+        <h3>Produktliste</h3>
+
+        <div class="product" ng-controller="productListItem">
+            <h2>Produkt 1 Random: {{ rand }}</h2>
+            <button ng-click="putToBasket('product1')">In den Warenkorb</button>
+        </div>
+
+        <div class="product" ng-controller="productListItem">
+            <h2>Produkt 2: {{ rand }}</h2>
+            <button ng-click="putToBasket('product2')">In den Warenkorb</button>
+        </div>
+
+
+        <div class="product" ng-controller="productListItem">
+            <h2>Produkt 3: {{ rand }}</h2>
+            <button ng-click="putToBasket('product3')">In den Warenkorb</button>
+        </div>
+
+        <div class="product" ng-controller="productListItem">
+            <h2>Produkt 4: {{ rand }}</h2>
+            <button ng-click="putToBasket('product4')">In den Warenkorb</button>
+        </div>
+
+        <div class="product" ng-controller="productListItem">
+            <h2>Produkt 5: {{ rand }}</h2>
+            <button ng-click="putToBasket('product5')">In den Warenkorb</button>
+        </div>
+
+        <div class="product" ng-controller="productListItem">
+            <h2>Produkt 6: {{ rand }}</h2>
+            <button ng-click="putToBasket('product6')">In den Warenkorb</button>
+        </div>
+    </div>
+</div>
+
+<script src="dist/main.js"></script>
